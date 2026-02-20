@@ -16,7 +16,7 @@
     </header>
 
     <main class="container">
-        <div class="card">
+        <div class=tarjetas>
             <h2><span class="status status-warn">Nivel 1</span> Restore</h2>
             <p>Ideal para cuando el <strong>Search & Replace</strong> destruyó tus archivos locales pero aún no haces
                 commit.</p>
@@ -24,21 +24,21 @@
             <p><small>Recupera el estado del último commit en tu Working Directory.</small></p>
         </div>
 
-        <div class="card">
+        <div class=tarjetas>
             <h2><span class="status status-warn">Nivel 2</span> Reset</h2>
             <p>Hiciste commit de algo que no debías (credenciales, bugs, basura). Vuelve atrás localmente.</p>
             <code>git reset --soft HEAD~1</code>
             <p><small>Mantiene tus cambios pero borra el commit del historial.</small></p>
         </div>
 
-        <div class="card">
+        <div class=tarjetas>
             <h2><span class="status status-crit">Nivel 3</span> Revert</h2>
             <p>El error ya está en <strong>GitHub</strong>. No borres la historia, crea un antídoto.</p>
             <code>git revert [commit_id]</code>
             <p><small>Genera un nuevo commit que deshace los cambios del commit erróneo.</small></p>
         </div>
 
-        <div class="card">
+        <div class=tarjetas>
             <h2><span class="status status-crit">Nivel 4</span> Reflog</h2>
             <p>El botón nuclear. Recupera ramas borradas o resets accidentales.</p>
             <code>git reflog</code>
